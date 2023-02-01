@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(230, 229, 229);
+    color: black;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 10px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    justify-content: end;
+    padding: 12px;
+    /* background-color: black; */
+    border-radius: 18px;
+    background-color: white;
+}
+
+li>img {
+    width: 100%;
+}
+
+/* .cover {
+    width: 100vw;
+    
+} */
+
+
+
+/* to be fixed */
+.search {
+    width: 80vw;
+    margin: 4vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 20vw;
+    padding: 12px 24px;
+    border-radius: 12px 0 12px 0;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    margin-right: 0;
+}
+button{
+    margin-left: 0;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 12px 0 12px 0;
+    border: 0;
+    background-color: blue;
+    color: white;
+}
+
+
+/* formating lists */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Working on the banners */
+
+video{
+    /* width: 100vw; */
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: .5;
+}
+
+.search{
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 3;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Hero Text */
+
+.hero-text{
+    color: white;
+}
+
+.name{
+    font-size: 12rem;
+    margin: 0;
+}
+
+.description{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.indicator{
+    margin-top: 4vh;
+    color: white;
+}
+
+/* apply for all a tags */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(4, 4, 110);
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width:600px){
+    section{
+        grid-template-columns: 1fr;
+    }
+    
+    .name{
+        font-size: 45px;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+    .description{
+        font-size: 20px;
+        font-weight: lighter;
+        color: gray;
+    }
+
+    .search{
+        flex-direction: column;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        width: 45vw;
+        border-radius: 0;
+    }
+
+    button{
+        border-radius: 0;
+        margin-top: 12px;
+    }
+
+    .hero-text{
+        width: 90vw;
+        text-align: center;
+        margin: 10vh 0;
+    }
+
+    .cover{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .description{
+        margin-bottom: 0;
+        width: 80vw;
+        margin: 0 auto;
+        text-align: justify;
+    }
+}
+
